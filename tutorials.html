@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>tutorials</title>
+</head>
+<body>
+    <insertBar></insertBar>
+    <insertD-L></insertD-L>
+
+    <link rel="stylesheet" href="menuBar.css">
+    <script src="menuBar.js"></script>
+
+    <div class="containBtn right" onclick="swipeSlide(false)">
+        <div class="btn"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" class="arrImg rotateImg" alt=""></div>
+    </div>
+    
+    <div class="containBtn left" onclick="swipeSlide(true)">
+        <div class="btn"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" class="arrImg" alt="" ></div>
+    </div>
+    
+    <div id="containdisplay">
+        <div class="display-tu toggleDark" id="mainDisplay"> </div>
+        <div class="display-tu toggleDark" id="sencond"> </div>
+    </div>
+
+    <div class="progressbar-contain toggleDark ">
+        <div id="titles"></div>
+        <div id="progressbar"></div>
+    </div>
+
+    <!--this is used to store code for each of the sections-->
+    
+    <!-- Window -->
+    <div class="Section">
+        <div type="main" stage="7" title="welcome" colour="repeating-linear-gradient(45deg, #7cbb9c, #ff48ec 180px)" class="tutorialHTML">
+
+            <div class="header introTxt" > welcome </div>
+            <div class="info">
+                This is a walk step by step walk-through window that will gide you to solveing the rubix cube!  <br><br>
+            </div>
+            <insertCUBEtu movements = "" loadCube = "fullCube"> </insertCUBEtu>
+ 
+        </div>
+
+        <div type="main" colour="blue" title="white Cross" stage="1" class="tutorialHTML">
+            <div class="header stage-1" > step 1 - white cross  </div>
+            <div class="info">
+                White Edge Pieces
+            </div>
+            <div class="cubeSection">
+                <insertCUBEtu movements = "" loadCube = "stage-1"> </insertCUBEtu>
+                <div class="describesCube">
+                    This is what the goal of this stage
+                </div>
+            </div>
+        </div>
+        <div type="sub" colour="blue" title="white Cross" stage="1" class="tutorialHTML">
+            <div class="info">
+                case:1 Flipping An Edge
+            </div>
+            <div class="cubeSection">
+                <insertCUBEtu height="175" movements = "F U' R U" loadCube = "cross-case1"> </insertCUBEtu>
+                <div class="describesCube">
+                    three edges are done and the last one is oriented wrong
+                </div>
+            </div>
+
+            <div class="info">
+                case:2 From The Bottom Layer
+            </div>
+            <div class="cubeSection">
+                <insertCUBEtu movements = "F' U' R U" loadCube = "cross-case2"> </insertCUBEtu>
+                <div class="describesCube">
+                    white edge is on the front face
+                </div>
+            </div>
+
+            <div class="info">
+                case:3 From The Middle Layer
+            </div>
+            
+            <div class="cubeSection">
+                <insertCUBEtu movements = "U' R U" loadCube = "cross-case3"> </insertCUBEtu>
+                <div class="describesCube">
+                    second layer oriented wrong
+                </div>
+            </div>
+
+            <div class="cubeSection">
+                <insertCUBEtu movements = "U L' U'" loadCube = "cross-case4"> </insertCUBEtu>
+                <div class="describesCube">
+                    same case mirrored
+                </div>
+            </div>
+        </div>
+        
+        <div type="main" colour="rgb(36, 193, 36)" title="white corners" stage="2" class="tutorialHTML">
+
+        </div>
+        <div type="sub" colour="rgb(36, 193, 36)" title="white corners" stage="2" class="tutorialHTML">
+
+        </div>
+
+        <div type="main" colour="orange" title="2nd Layer" stage="3" class="tutorialHTML">
+
+        </div>
+
+        <div type="sub" colour="orange" title="2nd Layer" stage="3" class="tutorialHTML">
+\
+        </div>
+        
+        <div type="main" colour="rgb(255, 255, 116)" title="Yellow Cross" stage="4" class="tutorialHTML">
+
+        </div>
+
+        <div type="sub" colour="rgb(255, 255, 116)" title="Yellow Cross" stage="4" class="tutorialHTML">
+
+        </div>
+
+
+        <div type="main" colour="orange" title="Yellow Side" stage="5" class="tutorialHTML">
+            <div class="cubeSection">
+                <insertCUBEtu movements = "U' R' U" loadCube = "cross-case5"> </insertCUBEtu>
+                <div class="describesCube">
+                    white edge is suck on the end 
+                </div>
+            </div>
+        </div>
+        <div type="sub" colour="orange" title="Yellow Side" stage="5" class="tutorialHTML">
+            <div class="cubeSection">
+                <insertCUBEtu movements = "U' R' U" loadCube = "cross-case5"> </insertCUBEtu>
+                <div class="describesCube">
+                    white edge is suck on the end 
+                </div>
+            </div>
+        </div>
+        <div type="main" colour="orange" title="Pair Of Corners" stage="6" class="tutorialHTML">
+            <div class="header stage-1" > step 1 - white cross  </div>
+            <div class="info">
+                White Corner Pieces
+            </div>
+            <div class="cubeSection">
+                <insertCUBEtu movements = "" loadCube = "stage-2"> </insertCUBEtu>
+                <div class="describesCube">
+                    This is what the goal of this stage
+                </div>
+            </div>
+        </div>
+        <div type="sub" colour="orange" title="Pair Of Corners" stage="6" class="tutorialHTML">
+            <div class="header stage-1" > step 1 - white cross  </div>
+            <div class="info">
+                White Corner Pieces
+            </div>
+            <div class="cubeSection">
+                <insertCUBEtu movements = "" loadCube = "stage-2"> </insertCUBEtu>
+                <div class="describesCube">
+                    This is what the goal of this stage
+                </div>
+            </div>
+        </div>
+
+        <div type="main" colour="orange" title="Final Edges" stage="7" class="tutorialHTML">
+        </div>
+        <div type="sub" colour="orange" title="Final Edges" stage="7" class="tutorialHTML">
+        </div>
+        <div type="main" colour="orange" title="DONE!" stage="7" class="tutorialHTML">
+        </div>
+        <div type="sub" colour="orange" title="patterns" stage="7" class="tutorialHTML">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- main page -->
+    <div class="Section">
+        <div type="main" stage="7" title="welcome" colour="repeating-linear-gradient(45deg, #7cbb9c, #ff48ec 180px)" class="tutorialHTML">
+
+            <div class="header introTxt" > welcome </div>
+            <div class="info">
+                This is a walk step by step walk-through window that will gide you to solveing the rubix cube!  <br><br>
+            </div>
+            <insertCUBEtu movements = "" loadCube = "fullCube"> </insertCUBEtu>
+ 
+        </div>
+
+        <div type="main" colour="orange" title="Final Edges" stage="7" class="tutorialHTML">
+            
+        </div>
+    
+
+    </div>
+
+</body>
+
+<style>
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+insertcubeverify{
+    display: flex;
+    justify-content: center;
+}
+.introTxt{
+    background-image:repeating-linear-gradient(45deg, #7cbb9c, #ff48ec 8px)
+}
+.info{
+    background: #7e5fa40f;
+    padding: 17px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px;
+}
+.describesCube{
+    font-family: monospace;
+    background: #afafaf;
+    border-radius: 12px;
+    padding: 9px;
+}
+.cubeSection{
+    background: #a8a8a887;
+    padding: 12px;
+    width:fit-content;
+    border-radius: 12px;
+}
+.stage-1{
+    background-image: repeating-linear-gradient(45deg, rgb(64, 64, 161), #1e8cff 18px);
+}
+.header{
+    text-align: center;
+    font-size: 20px;
+    color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0px 0px 0.3px black);
+    text-transform: capitalize;
+}
+.Section{
+    display: none;
+}
+#titles{
+    width: 95%;
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.progressbar-contain{
+    height: 46px;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    position: absolute;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: 0px 0px 20px 0px rgb(0 9 55 / 40%);
+    display: flex;
+    align-items: center;
+}
+
+#progressbar{
+    height: 12%;
+    background-color: red;
+    border-radius: 10px;
+    transition-duration: 1s;
+    margin-left: 3vw;
+}
+
+.rotateImg{
+    rotate:180deg;
+}
+
+.nomove{
+    -webkit-transform: scale(1.6);
+}
+
+.containBtn{
+    width: 15vw;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrImg{
+    opacity: 0.5;
+    height: 100%;
+    padding: 7px;
+    width: 90%;
+    transition-duration: 1s;
+    border: 5px solid #5555550f;
+    border-radius: 34px;
+    background: white;
+}
+
+.btn{
+    width: 37%;
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    right: 0;
+}
+
+.left{
+    left: 0;
+}
+
+.popUpHeadder{
+    font-family: monospace;
+    transition-duration: 1s;
+    opacity: 0;   
+    width: 0;
+    height: fit-content;
+}
+
+.popUpHeadder.active{
+    opacity: 1;
+    font-size: 14px;
+    width: fit-content;
+    margin-bottom: 28px;
+    border-radius: 12px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.hilight{
+    background: #00000017;
+}
+
+
+#containdisplay{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    position: absolute;
+    transition-duration: 0.8s;
+    display: flex;    
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#sencond{
+    margin-left: 200%;
+}
+    
+.display-tu{
+    position: absolute;
+    background: #ffffff;
+    height: 90%;
+    margin-bottom: 5vh;
+    width: 95%;
+    transition-duration: 0.7s;
+    box-shadow: 0px 0px 20px 20px rgb(0 9 55 / 40%);
+    border-radius: 10px;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.display-tu.dark{
+    background:linear-gradient(180deg, #00124f, #5f4d85)!important;
+}
+.containCubeDispay{
+    border: 4px solid #9292921f;
+    transition-duration: 0.5s;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ffeeee, #d5e8ff);
+}
+.cubeFrame{
+    border-radius: 10px;
+    height:175px;
+    width: 100%;
+}
+
+</style>
+
+<script>
+    const mainEl = document.getElementById("mainDisplay");
+    const progressBar = document.getElementById("progressbar");
+    const containdisplay =  document.getElementById("containdisplay");
+    var swapping = false;
+    var indexOn = 0;
+    
+    tutorialCubes = {
+        "fullCube":[
+            //side1
+                fillside("W")
+            ,
+            //side2
+                fillside("Y")
+            ,
+            //side3
+                fillside("B")
+            ,
+            //side4
+                fillside("G")
+            ,
+            //side5
+                fillside("R")
+            ,
+            //side6
+                fillside("O")
+            ,
+        ],
+        "stage-1":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","W","-"],
+            ],
+            fillside("-"),
+            [
+            ["-","-","-"],
+            ["B","B","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","R","-"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","-"],
+            ["-","O","-"],
+            ],
+        ],
+        "cross-case1":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","R","-"],
+            ],
+            fillside("-"),
+            [
+            ["-","-","-"],
+            ["B","B","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","W","-"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","-"],
+            ["-","O","-"],
+            ],
+        ],
+        "cross-case2":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","-","-"],
+            ],
+            [           
+            ["-","R","-"],
+            ["-","-","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["B","B","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","R","-"],
+            ["-","W","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","-"],
+            ["-","O","-"],
+            ],
+        ],
+        "cross-case3":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","-","-"],
+            ],
+            [           
+            ["-","-","-"],
+            ["-","-","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["B","B","-"],
+            ["-","R","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","R","W"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","-"],
+            ["-","O","-"],
+            ],
+        ],
+        "cross-case4":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","-","-"],
+            ],
+            [           
+            ["-","-","-"],
+            ["-","-","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["B","B","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","R","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["W","R","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","-"],
+            ["-","O","-"],
+            ],
+        ],
+        "cross-case5":[
+            [
+            ["-","W","-"],
+            ["W","W","W"],
+            ["-","-","-"],
+            ],
+            [           
+            ["-","-","-"],
+            ["-","-","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","R","-"],
+            ["B","B","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","G","G"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [
+            ["-","-","-"],
+            ["-","O","W"],
+            ["-","O","-"],
+            ],
+        ],
+        "stage-2":[
+            //side1
+                fillside("W")
+            ,
+                //side2
+                fillside("-")
+            ,
+            [//side3
+            ["B","-","-"],
+            ["B","B","-"],
+            ["B","-","-"],
+            ],
+            [//side4
+            ["-","-","G"],
+            ["-","G","G"],
+            ["-","-","G"],
+            ],
+            [//side5
+            ["R","R","R"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [//side6
+            ["-","-","-"],
+            ["-","O","-"],
+            ["O","O","O"],
+            ],
+        ],
+        "layer1-stage1":[
+            //side1
+                fillside("W")
+            ,
+                //side2
+                fillside("-")
+            ,
+            [//side3
+            ["B","-","-"],
+            ["B","B","-"],
+            ["B","-","-"],
+            ],
+            [//side4
+            ["-","-","G"],
+            ["-","G","G"],
+            ["-","-","G"],
+            ],
+            [//side5
+            ["R","R","R"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [//side6
+            ["-","-","-"],
+            ["-","O","-"],
+            ["O","O","O"],
+            ],
+        ],
+        "layer1-stage2":[
+            //side1
+                fillside("W")
+            ,
+                //side2
+                fillside("-")
+            ,
+            [//side3
+            ["B","-","-"],
+            ["B","B","-"],
+            ["B","-","-"],
+            ],
+            [//side4
+            ["-","-","G"],
+            ["-","G","G"],
+            ["-","-","G"],
+            ],
+            [//side5
+            ["R","R","R"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [//side6
+            ["-","-","-"],
+            ["-","O","-"],
+            ["O","O","O"],
+            ],
+        ],
+        "layer1-stage3":[
+            //side1
+                fillside("W")
+            ,
+                //side2
+                fillside("-")
+            ,
+            [//side3
+            ["B","-","-"],
+            ["B","B","-"],
+            ["B","-","-"],
+            ],
+            [//side4
+            ["-","-","G"],
+            ["-","G","G"],
+            ["-","-","G"],
+            ],
+            [//side5
+            ["R","R","R"],
+            ["-","R","-"],
+            ["-","-","-"],
+            ],
+            [//side6
+            ["-","-","-"],
+            ["-","O","-"],
+            ["O","O","O"],
+            ],
+        ],
+    }
+
+    localStorage.setItem('tutorial', JSON.stringify(tutorialCubes));
+    const CubeIndex = new URL(document.location).searchParams.get("cubeIndex");
+    var tutorialSections = []
+
+
+    // add the cubes
+    function addInTheCubes(){
+        cubeTu = document.getElementsByTagName("insertCUBEtu")
+        for (let i = 0; i < cubeTu.length; i++) {
+            cubeLoad = cubeTu[i].getAttribute("loadcube");
+            movements = cubeTu[i].getAttribute("movements");
+            noMove = ""
+            if(movements==""){
+                noMove = " nomove" 
+            }
+            height = cubeTu[i].getAttribute("height");
+            cubeTu[i].innerHTML = '<iframe style="'+height+'" class="cubeFrame'+noMove+'" id="frame-'+i+'" src="miniCube.html?loadCube='+cubeLoad+'&movements='+movements+'" frameborder="0"></iframe>';
+            iframe = document.getElementById("frame-"+i);
+        }
+    }
+
+    function setVeribalSections(){
+         if(CubeIndex != null){
+            document.getElementsByTagName("insertBar")[0].remove()
+            document.getElementsByTagName("insertD-L")[0].remove()
+
+            tutorialHTMLarr = document.getElementsByClassName("Section")[0].getElementsByClassName("tutorialHTML");
+            // populate tutorialSections
+            
+            for (let i = 0; i < tutorialHTMLarr.length; i++) {
+                tutorialSections.push({
+                    "type":tutorialHTMLarr[i].getAttribute("type"),
+                    "colour":tutorialHTMLarr[i].getAttribute("colour"),
+                    "title":tutorialHTMLarr[i].getAttribute("title"),
+                    "stage":parseInt(tutorialHTMLarr[i].getAttribute("stage")),
+                    "html":tutorialHTMLarr[i].innerHTML,   
+                });
+            }
+        }else{
+            tutorialHTMLarr = document.getElementsByClassName("Section")[1].getElementsByClassName("tutorialHTML");
+            // populate tutorialSections
+            for (let i = 0; i < tutorialHTMLarr.length; i++) {
+                tutorialSections.push({
+                    "type":tutorialHTMLarr[i].getAttribute("type"),
+                    "colour":tutorialHTMLarr[i].getAttribute("colour"),
+                    "title":tutorialHTMLarr[i].getAttribute("title"),
+                    "stage":parseInt(tutorialHTMLarr[i].getAttribute("stage")),
+                    "html":tutorialHTMLarr[i].innerHTML,   
+                });
+            }
+        }
+    }
+
+
+    //makes a 3x3 side with a center with the given color 
+    function fillside(colour,centerColour){
+        returnArray = new Array(3).fill(0).map(() => new Array(3).fill(colour));
+        if(centerColour){returnArray[1][1] = centerColour}
+        return returnArray;
+    }
+
+    
+
+    function swipeSlide(left){
+        if(swapping==true){return;}
+        const moveEl = document.getElementById("sencond")
+        swapping = true;
+        document.getElementsByClassName("popUpHeadder")[indexOn].classList.toggle("active");
+        //set up
+        moveEl.style.transitionDuration = "0s";
+        moveEl.style.opacity = 1;
+        moveEl.style.display = "flex";
+
+        if(left){
+            moveEl.style.marginLeft = "0%";
+            moveEl.style.marginRight = "200%";
+            indexOn--
+        }else{
+            moveEl.style.marginLeft = "200%";
+            moveEl.style.marginRight = "0%";
+            indexOn++
+        }
+
+        // set a range for the indexOn variable to make it within the amount of tutorials
+        if(indexOn < 0) {indexOn = tutorialSections.length - 1;}
+        if(indexOn > tutorialSections.length - 1) {indexOn = 0;}
+        // add the new html to the overlay
+        document.getElementsByClassName("popUpHeadder")[indexOn].classList.toggle("active");
+        //
+        if(CubeIndex != null){
+            cubes = JSON.parse(localStorage.allCubes);
+            cubes[CubeIndex].optionsSelect.stage = indexOn;
+            localStorage.setItem("allCubes",JSON.stringify(cubes))
+
+            parent.postMessage(tutorialSections[indexOn].stage,"*");
+        }else{
+            sessionStorage.setItem("pageOnTu",indexOn)
+        }
+        
+        moveEl.innerHTML = tutorialSections[indexOn].html;
+        containdisplay.style.background = tutorialSections[indexOn].colour;
+        progressBar.style.background = tutorialSections[indexOn].colour;
+
+        // update progress Bar 
+        progressBar.style.width = 94*(indexOn/(tutorialSections.length-1))+1+"vw";
+        
+        // add the transitionDuration after so that it applies to the element and does not interfear with the set up
+        setTimeout(()=>{
+            moveEl.style.transitionDuration="0.8s"
+            if(left){
+                moveEl.style.marginRight = "0%";
+            }else{
+                moveEl.style.marginLeft = "0%";
+            }
+        },1)
+
+        setTimeout(()=>{
+            //// add the new html to the main display then remove the overlay
+            mainEl.innerHTML = tutorialSections[indexOn].html
+            moveEl.style.opacity = 0;
+            moveEl.style.display = "none";
+            swapping = false;
+        },800)
+    }
+
+    function setUpBox(){
+        var cubeStage = 0;
+        if(CubeIndex != null){
+            cubeStage = JSON.parse(localStorage.allCubes)[CubeIndex].optionsSelect.stage;
+            parent.postMessage(tutorialSections[cubeStage].stage,"*");
+        }else{
+            if(sessionStorage.pageOnTu == undefined){
+                sessionStorage.setItem("pageOnTu",0)
+            }
+            cubeStage = JSON.parse(sessionStorage.pageOnTu)   
+        }
+        indexOn = cubeStage;
+        // progress Bar 
+        progressBar.style.width = 94*(cubeStage/(tutorialSections.length-1))+1+"vw";
+        document.getElementsByClassName("popUpHeadder")[cubeStage].classList.toggle("active");
+        //  main box
+        mainEl.innerHTML = tutorialSections[cubeStage].html;
+        containdisplay.style.background = tutorialSections[cubeStage].colour;
+        progressBar.style.background = tutorialSections[cubeStage].colour;
+    }
+
+    function main(){
+        addInTheCubes() 
+        setVeribalSections()
+        //add titles to progress bar 
+        for(let i = 0; i < tutorialSections.length;i++){
+            if(tutorialSections[i].type == "main"){
+                document.getElementById("titles").innerHTML += "<div class='popUpHeadder hilight'>" + tutorialSections[i].title + "</div>"
+            }else{
+                //for the sub sections
+                document.getElementById("titles").innerHTML += "<div class='popUpHeadder'>" + tutorialSections[i].title + "</div>"
+            }
+        }
+        //set up
+        setUpBox()
+        //user imput
+        document.addEventListener("keydown", (event)=> {
+            if (event.key === "ArrowLeft") {
+                swipeSlide(true);
+            } else if (event.key === "ArrowRight") {
+                swipeSlide(false);
+            }
+        });
+    }
+
+    window.onload = main
+
+</script>
+</html>
