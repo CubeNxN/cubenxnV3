@@ -1365,7 +1365,6 @@
 
         //move it to the start
         var cubesArr = JSON.parse(localStorage.cubeOrder);
-        window.open("cube.html?cubeID=" + id, "_blank");
         //swap order,ve from position and add
         item = cubesArr[index]
         cubesArr.splice(index, 1)
@@ -1373,6 +1372,12 @@
         localStorage.setItem('cubeOrder', JSON.stringify(cubesArr));
         //update
         addCubes()
+        if(event.target.classList.contains("ExtLinkImg")){
+            window.open("cube.html?cubeID=" + id, "_blank");            
+        }else{
+            window.location.href="cube.html?cubeID=" + id;
+        }
+
     }
 
 
